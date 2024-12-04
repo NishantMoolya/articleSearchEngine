@@ -1,5 +1,5 @@
 const { saveArticle, loadArticles } = require("../db/methods");
-const { generateId, addArticleToCache, searchArticlesByTags, sortArticlesByDate, searchArticlesByCombinedText } = require("../helpers/articlesHelper");
+const { generateId, addArticleToCache, searchArticlesByTags, sortArticlesByDate, searchArticlesByCombinedText, addArticleToCombinedCache } = require("../helpers/articlesHelper");
 
 const postArticle = async (req, res) => {
     try {
@@ -19,6 +19,7 @@ const postArticle = async (req, res) => {
 
         saveArticle(article);
         addArticleToCache(article);
+        addArticleToCombinedCache(article);
         res.status(201).json({ data: article, error: null, msg: "article posted successfully" });
     } catch (error) {
         console.error('An error occurred:', error);
@@ -58,9 +59,9 @@ const searchArticle = async (req, res) => {
 
 const searchArticleByContent = async (req, res) => {
     try {
-        const { tags } = req.body;
+        const { query } = req.query;
         const articles = loadArticles();
-        const resultIds = searchArticlesByCombinedText(tags);
+        const resultIds = searchArticlesByCombinedText(query.split());
         const searchData = resultIds.map(id => articles.find(article => article.id === id));
         res.status(200).json({ data: searchData, error: null, msg: "article searched successfully" });
     } catch (error) {

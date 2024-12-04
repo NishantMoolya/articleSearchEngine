@@ -1,36 +1,35 @@
 [
   {
     "id": 1,
-    "title": "Exploring Popular Frontend Frameworks",
-    "content": "This article compares React, Angular, and Vue, highlighting their strengths and use cases.",
+    "title": "Introduction to Express.js",
+    "content": "Express.js is a fast, unopinionated, minimalist web framework for Node.js. It simplifies routing and middleware integration.",
     "tags": [
-      "Frontend",
-      "React",
-      "Angular",
-      "Vue"
+      "Node.js",
+      "Express",
+      "Web Development"
     ],
-    "createdAt": "2024-12-04T09:21:13.671Z"
+    "createdAt": "2024-12-04T10:19:03.585Z"
   },
   {
     "id": 2,
-    "title": "Mastering JavaScript Promises",
-    "content": "Promises are used to handle asynchronous operations in JavaScript. This guide explains how they work.",
+    "title": "JavaScript Closures Explained",
+    "content": "A closure is a function that retains access to variables from its lexical scope, even when the function is executed outside that scope.",
     "tags": [
       "JavaScript",
-      "Async",
-      "Promises"
+      "Programming",
+      "Closures"
     ],
-    "createdAt": "2024-12-04T09:21:29.559Z"
+    "createdAt": "2024-12-04T10:19:19.951Z"
   },
   {
     "id": 3,
     "title": "Understanding REST APIs",
-    "content": "REST is an architectural style for designing networked applications. Learn its principles and best practices.",
+    "content": "REST APIs are an architectural style for distributed hypermedia systems. It stands for Representational State Transfer and operates over HTTP.",
     "tags": [
       "API",
       "REST",
-      "Backend"
+      "Web Services"
     ],
-    "createdAt": "2024-12-04T09:21:36.896Z"
+    "createdAt": "2024-12-04T10:19:32.424Z"
   }
 ]

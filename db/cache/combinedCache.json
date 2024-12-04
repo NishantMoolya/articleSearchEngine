@@ -1,0 +1,178 @@
+{
+  "introduction": [
+    1
+  ],
+  "to": [
+    1,
+    2
+  ],
+  "express.js": [
+    1,
+    1
+  ],
+  "is": [
+    1,
+    2,
+    2
+  ],
+  "a": [
+    1,
+    2,
+    2
+  ],
+  "fast,": [
+    1
+  ],
+  "unopinionated,": [
+    1
+  ],
+  "minimalist": [
+    1
+  ],
+  "web": [
+    1
+  ],
+  "framework": [
+    1
+  ],
+  "for": [
+    1,
+    3,
+    3
+  ],
+  "node.js.": [
+    1
+  ],
+  "it": [
+    1,
+    3
+  ],
+  "simplifies": [
+    1
+  ],
+  "routing": [
+    1
+  ],
+  "and": [
+    1,
+    3
+  ],
+  "middleware": [
+    1
+  ],
+  "integration.": [
+    1
+  ],
+  "javascript": [
+    2
+  ],
+  "closures": [
+    2
+  ],
+  "explained": [
+    2
+  ],
+  "closure": [
+    2
+  ],
+  "function": [
+    2,
+    2
+  ],
+  "that": [
+    2,
+    2
+  ],
+  "retains": [
+    2
+  ],
+  "access": [
+    2
+  ],
+  "variables": [
+    2
+  ],
+  "from": [
+    2
+  ],
+  "its": [
+    2
+  ],
+  "lexical": [
+    2
+  ],
+  "scope,": [
+    2
+  ],
+  "even": [
+    2
+  ],
+  "when": [
+    2
+  ],
+  "the": [
+    2
+  ],
+  "executed": [
+    2
+  ],
+  "outside": [
+    2
+  ],
+  "scope.": [
+    2
+  ],
+  "understanding": [
+    3
+  ],
+  "rest": [
+    3,
+    3
+  ],
+  "apis": [
+    3,
+    3
+  ],
+  "are": [
+    3
+  ],
+  "an": [
+    3
+  ],
+  "architectural": [
+    3
+  ],
+  "style": [
+    3
+  ],
+  "distributed": [
+    3
+  ],
+  "hypermedia": [
+    3
+  ],
+  "systems.": [
+    3
+  ],
+  "stands": [
+    3
+  ],
+  "representational": [
+    3
+  ],
+  "state": [
+    3
+  ],
+  "transfer": [
+    3
+  ],
+  "operates": [
+    3
+  ],
+  "over": [
+    3
+  ],
+  "http.": [
+    3
+  ]
+}

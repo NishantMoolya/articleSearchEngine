@@ -1,23 +1,20 @@
 {
-  "frontend": [
+  "node.js": [
     1
   ],
-  "react": [
+  "express": [
     1
   ],
-  "angular": [
-    1
-  ],
-  "vue": [
+  "web development": [
     1
   ],
   "javascript": [
     2
   ],
-  "async": [
+  "programming": [
     2
   ],
-  "promises": [
+  "closures": [
     2
   ],
   "api": [
@@ -26,7 +23,7 @@
   "rest": [
     3
   ],
-  "backend": [
+  "web services": [
     3
   ]
 }

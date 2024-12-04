@@ -12,8 +12,8 @@ const generateId = (articles) => {
   };
 
   // Path for the tag cache file
-const tagCacheFilePath = "tagCache.json";
-const combinedCacheFilePath = 'combinedCache.json';
+const tagCacheFilePath = "./db/cache/tagCache.json";
+const combinedCacheFilePath = './db/cache/combinedCache.json';
 
   // Create an in-memory tag cache
 const tagCache = new Map();
@@ -74,14 +74,18 @@ const addArticleToCache = (article) => {
 
 // Add article to the combined cache (title + content)
 const addArticleToCombinedCache = (article) => {
-  // Combine the title and content into one text field (normalized for case-insensitive search)
   const combinedText = (article.title + ' ' + article.content).toLowerCase();
+  const words = combinedText.split(/\s+/);  // Split by spaces (and handle multiple spaces)
 
-  // Add the article ID to the cache for the combined text
-  if (!combinedCache.has(combinedText)) {
-    combinedCache.set(combinedText, []);
-  }
-  combinedCache.get(combinedText).push(article.id);
+  // Add each word to the cache
+  words.forEach((word) => {
+    if (word) {  // Ignore empty strings resulting from multiple spaces
+      if (!combinedCache.has(word)) {
+        combinedCache.set(word, []);
+      }
+      combinedCache.get(word).push(article.id);
+    }
+  });
 
   // Save combined cache after adding an article
   saveCachesToFile();
@@ -102,17 +106,17 @@ const searchArticlesByTags = (tags) => {
 };
 
 // Search articles by combined title and content
-const searchArticlesByCombinedText = (searchText) => {
-  const searchKey = searchText.toLowerCase();
-  const matchingArticleIds = [];
+const searchArticlesByCombinedText = (searchWords) => {
+  const matchingArticleIds = new Set();
 
-  combinedCache.forEach((articleIds, combinedText) => {
-    if (combinedText.includes(searchKey)) {
-      matchingArticleIds.push(...articleIds);
+  searchWords.forEach((searchWord) => {
+    const normalizedWord = searchWord.toLowerCase();
+    if (combinedCache.has(normalizedWord)) {
+      combinedCache.get(normalizedWord).forEach((id) => matchingArticleIds.add(id));
     }
   });
 
-  return matchingArticleIds;
+  return Array.from(matchingArticleIds);
 };
 
 // Initialize the tag cache at startup
