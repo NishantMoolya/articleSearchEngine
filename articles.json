@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "title": "Exploring Popular Frontend Frameworks",
+    "content": "This article compares React, Angular, and Vue, highlighting their strengths and use cases.",
+    "tags": [
+      "Frontend",
+      "React",
+      "Angular",
+      "Vue"
+    ],
+    "createdAt": "2024-12-04T09:21:13.671Z"
+  },
+  {
+    "id": 2,
+    "title": "Mastering JavaScript Promises",
+    "content": "Promises are used to handle asynchronous operations in JavaScript. This guide explains how they work.",
+    "tags": [
+      "JavaScript",
+      "Async",
+      "Promises"
+    ],
+    "createdAt": "2024-12-04T09:21:29.559Z"
+  },
+  {
+    "id": 3,
+    "title": "Understanding REST APIs",
+    "content": "REST is an architectural style for designing networked applications. Learn its principles and best practices.",
+    "tags": [
+      "API",
+      "REST",
+      "Backend"
+    ],
+    "createdAt": "2024-12-04T09:21:36.896Z"
+  }
+]
